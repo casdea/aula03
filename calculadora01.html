@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora Simples</title>
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+    <input type="number" id="numero1">
+    <input type="number" id="numero2">
+    <button onclick="somar()">Somar</button>
+    <button onclick="subtrair()">Subtrair</button>
+    <button onclick="multiplicar()">Multiplicar</button>
+    <button onclick="dividir()">Dividir</button>
+    <p id="resultado"></p>
+
+    <script>
+        // Funções para realizar operações
+        function somar() {
+            var num1 = parseFloat(document.getElementById("numero1").value);
+            var num2 = parseFloat(document.getElementById("numero2").value);
+            var resultado = num1 + num2;            
+            document.getElementById("resultado").textContent = "Resultado da Soma: " + resultado;
+            console.log("A variavel num1 é do tipo ",typeof num1);
+        }
+
+        function subtrair() {
+            var num1 = parseFloat(document.getElementById("numero1").value);
+            var num2 = parseFloat(document.getElementById("numero2").value);
+            var resultado = num1 - num2;
+            document.getElementById("resultado").textContent = "Resultado subtração: " + resultado;
+        }
+
+        function multiplicar() {
+            var num1 = parseFloat(document.getElementById("numero1").value);
+            var num2 = parseFloat(document.getElementById("numero2").value);
+            var resultado = num1 * num2;
+            document.getElementById("resultado").textContent = "Resultado Multiplicação: " + resultado;
+
+        }
+        function dividir() {
+            var num1 = parseFloat(document.getElementById("numero1").value);
+            var num2 = parseFloat(document.getElementById("numero2").value);
+            var resultado = num1 / num2;
+            document.getElementById("resultado").textContent = "Resultado da divisão: " + resultado;
+
+        }
+    </script>
+</body>
+</html>
