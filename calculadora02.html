@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Simples</title>
 </head>
 <body>
     <h1>Calculadora Simples</h1>
-    <input type="number" id="numero1">
-    <input type="number" id="numero2">
+    <input type="number" id="numero1" placeholder="Numero 1">
+    <input type="number" id="numero2" placeholder="Numero 2">
     <button onclick="somar()">Somar</button>
     <button onclick="subtrair()">Subtrair</button>
     <button onclick="multiplicar()">Multiplicar</button>
@@ -14,6 +16,8 @@
     <p id="resultado"></p>
 
     <script>
+
+
         // Funções para realizar operações
         function somar() {
             const num1 = parseFloat(document.getElementById("numero1").value);
@@ -23,6 +27,7 @@
         }
 
         function subtrair() {
+            var x = 0;
             let numSub1 = parseFloat(document.getElementById("numero1").value);
             let numSub2 = parseFloat(document.getElementById("numero2").value);
             const resultadoSub = numSub1 - numSub2;
